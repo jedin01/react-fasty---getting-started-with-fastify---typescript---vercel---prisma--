@@ -2,7 +2,7 @@ import fastify from 'fastify';
 import { PrismaClient } from '@prisma/client';
 import a from '@fastify/cors';
 
-
+const port = process.env.PORT || 3000;
 
 const server = fastify();
 await server.register(a, {
